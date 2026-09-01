@@ -1,0 +1,14 @@
+A Comparative Analysis of Hugging Face Transformers and the OpenAI API
+Machine Learning and Deep Learning Tools and Frameworks: Lab 1 
+We researched Hugging Face Transformers and the OpenAI API for this assignment. Both tools shape how developers build machine learning applications today, but they follow different paths.
+Background
+Hugging Face started in 2016 as a chatbot company in Paris. The founders open sourced a BERT implementation in 2018 and built the Transformers library around that release. This library grew into the standard tool for accessing pretrained models across text, audio, and vision. OpenAI released the GPT series through an API starting in 2020 with GPT-3. GPT-4 launched in March 2023 and added image input along with stronger reasoning.
+Key Features
+Transformers give a single, consistent interface for over 300 model architectures. One would download a pretrained model, fine tune the model on their own data, and deploy the model on their own hardware or through Hugging Face Inference Endpoints. The OpenAI API works differently. you'd send a prompt to a hosted endpoint, and OpenAI manages every layer below the API call, including training, scaling, and safety guardrails.
+Real-World Applications
+Hugging Face powers named-entity extraction for Prophia in commercial real estate and hosts
+BLOOM, a 176-billion-parameter model built by over 1,000 researchers across 70 countries. JP Morgan Chase runs financial analysis through the OpenAI API, and Intercom built a low-latency voice agent named Fin Voice on the OpenAI Realtime API.
+Comparative Perspective
+Hugging Facen Transformers wins on customization, cost control, and data privacy if one were to run models on our their infrastructure. The OpenAI API wins on setup speed and top-tier model performance since OpenAI handles infrastructure on the user's behalf. Teams with strong engineering resources and privacy needs favor Hugging Face. Teams that want a fast path to production favor the OpenAI API.
+
+
